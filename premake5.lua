@@ -85,7 +85,7 @@ workspace "UTest"
         }
 
         filter "configurations:Debug"
-        defines "UTEST_DEBUG"
+        defines { "UTEST_DEBUG", "USING_UTEST" }
         symbols "on"
 
         filter "configurations:Release"

@@ -1,3 +1,5 @@
+#if defined(USING_UTEST)
+
 #include "UTest.h"
 #include "Sandbox.h"
 
@@ -28,3 +30,5 @@ TEST(TestSandbox4)
     int result = sb.Add(2, 2);
     AssertFalse(4 != result);
 }
+
+#endif

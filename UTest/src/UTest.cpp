@@ -78,7 +78,7 @@ void UTestRunner::Run()
     {
         ss.str("");
         ss.clear();
-        ss << std::endl << "\tAll tests passed" << std::endl;
+        ss << std::endl << "\tCongratulations! All tests passed." << std::endl;
         OutputDebugStringA(ss.str().c_str());
     }
 

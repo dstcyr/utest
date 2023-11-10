@@ -1,4 +1,4 @@
-# utest
+# UTest
 Simple and easy-to-use testing library in C++
 
 
@@ -10,9 +10,12 @@ Simple and easy-to-use testing library in C++
 Declare a test
 
 ```C++
-#if USE_TESTS
+#if defined(USING_UTEST)
 
-TEST(TestSomethingInSandbox)
+#include "UTest.h"
+#include "Sandbox.h"
+
+TEST(TestSandbox1)
 {
     Sandbox sb;
     int result = sb.Add(2, 2);
@@ -29,9 +32,10 @@ Run the tests
 ```C++
 int main()
 {
-#if USE_TESTS
+#if defined(USING_UTEST)
     UTestRunner::Get().Run();
 #endif
+
     return 0;
 }
 ```
