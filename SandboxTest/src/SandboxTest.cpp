@@ -4,7 +4,7 @@
 
 TEST(CanDoAdditions)
 {
-    Sandbox sandbox;
+    Sandbox sb;
     ASSERT_EQUAL(4, 2 + 2);
 }
 
